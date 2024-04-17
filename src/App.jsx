@@ -3,13 +3,16 @@ import { Bounce } from "react-toastify";
 
 import headerImage from "./assets/images/sakura-header.jpg";
 import hy from "./assets/images/double-happiness (1).png";
+import banner from "./assets/images/card.png";
+
 import std from "./assets/images/save-the-date.png";
-import invitation from "./assets/images/invitation.gif";
-import envelope from "./assets/images/red-envelope.png";
+import invitation from "./assets/images/love-letter.gif";
+import album from "./assets/images/family-album.gif";
+import gift from "./assets/images/gift.gif";
 import qr1 from "./assets/images/qr1.jpg";
 import qr2 from "./assets/images/qr.jpg";
 import backgroundMusic from "./assets/musics/music1.mp3";
-import date from "./assets/images/date.jpg";
+import date from "./assets/images/poster.png";
 import bride from "./assets/images/bride.png";
 import groom from "./assets/images/groom.png";
 import { firestore } from "../firebase";
@@ -242,7 +245,7 @@ const ChatDiv = () => {
 const BankDiv = () => {
   return (
     <div id="mungcuoi" className="chat-container">
-      <img src={envelope} width={100} height={100} />
+      <img src={gift} width={100} height={100} />
       <h2 style={{ fontFamily: "HelloHoney", fontSize: 50 }}>Gửi Quà Cưới</h2>
       <div className="card-wrapper">
         <div className="card">
@@ -398,6 +401,7 @@ function App() {
         {isMobile ? (
           <img src={headerImage} alt="Your Image" className="header-image" />
         ) : null}
+
         <nav>
           <input type="checkbox" id="check" />
           <label htmlFor="check" className="checkbtn">
@@ -428,73 +432,22 @@ function App() {
         </nav>
       </div>
       <div className="home">
-        <h1>Dũng & Huyền</h1>
-        <div className="container-out">
-          <div className="container-in">
-            <img src={hy} alt="Your Image" width={100} height={100} />
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                margin: 20,
-              }}
-            >
-              <h3
-                style={{
-                  width: 120,
-                  margin: "0 10px",
-                  borderTop: "1px solid black",
-                  borderBottom: "1px solid black",
-                }}
-              >
-                THỨ 7
-              </h3>
-
-              <div
-                style={{
-                  alignItems: "center",
-                  justifyContent: "center",
-                  textAlign: "center",
-                }}
-              >
-                <h2>04</h2>
-                <h3>2024</h3>
-              </div>
-              <h3
-                style={{
-                  width: 120,
-                  margin: "0 10px",
-                  borderTop: "1px solid black",
-                  borderBottom: "1px solid black",
-                }}
-              >
-                THÁNG 5
-              </h3>
-            </div>
+        {isMobile ? (
+          <>
+            <img src={banner} alt="Your Image" className="header-image" />
             <CountdownClock />
-            <h3>Hôn lễ được cử hành tại</h3>
-            <h2 style={{ fontFamily: "HelloHoney", fontSize: 55, margin: 20 }}>
-              Tư gia nhà trai
-            </h2>
-            <h3>Quốc lộ 1A, Thôn Trung Sơn, Cẩm Sơn, Cẩm Xuyên, Hà Tĩnh</h3>
-            <div
-              onClick={() =>
-                window.open(
-                  "https://www.google.com/maps/place/Kh%C3%A1ch+s%E1%BA%A1n+Ngo%E1%BA%A1i+Th%C6%B0%C6%A1ng/@18.0772729,106.2868121,17z/data=!3m1!4b1!4m9!3m8!1s0x313889b7a46e7d63:0xff459b9b877b614f!5m2!4m1!1i2!8m2!3d18.0772678!4d106.289387!16s%2Fg%2F1tgm0bbj?hl=vi-VN&entry=ttu"
-                )
-              }
-              className="text links"
-              style={{ marginTop: 18 }}
-            >
-              GOOGLE MAPS
+          </>
+        ) : (
+          <div className="container-out">
+            <div className="container-in">
+              <img src={banner} alt="Your Image" className="header-image1" />
             </div>
+            <div className="home-img" id="home-img-lg"></div>
           </div>
-          <div className="home-img" id="home-img-lg"></div>
-        </div>
+        )}
       </div>
 
-      <div className="home-img home-img-sm"></div>
+      {!isMobile && <div className="home-img home-img-sm"></div>}
       <div className="timeline reveal">
         <div className="timeline-container">
           <div className="timeline-img"></div>
@@ -578,7 +531,7 @@ function App() {
               <div className="stay-item">
                 <h3>
                   01. <br />
-                  RƯỚC DÂU TẠI NHÀ TRAI LÚC 9H 
+                  RƯỚC DÂU TẠI NHÀ TRAI LÚC 9H
                 </h3>
                 <div className="text">
                   ĐI THEO HƯỚNG DẪN <br /> Ở MAP BÊN DƯỚI ĐỂ TỚI NHÀ TRAI
@@ -609,7 +562,6 @@ function App() {
                   HOẶC GỌI CHO BỌN MÌNH
                 </div>
               </div>
-             
             </div>
           </div>
 
@@ -623,6 +575,21 @@ function App() {
 
           <ChatDiv />
           <BankDiv />
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+            }}
+          >
+            <img src={album} width={100} height={100} />
+            <h2 style={{ fontFamily: "HelloHoney", fontSize: 50 }}>
+              Album Ảnh Cưới
+            </h2>
+          </div>
+
           <SimpleSlider />
           <div className="parting-message reveal">
             <h1>Hope to See You!</h1>
