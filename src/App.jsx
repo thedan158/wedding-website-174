@@ -3,7 +3,7 @@ import { Bounce } from "react-toastify";
 
 import headerImage from "./assets/images/sakura-header.jpg";
 import hy from "./assets/images/double-happiness (1).png";
-import banner from "./assets/images/card.png";
+import banner from "./assets/images/card1.png";
 
 import std from "./assets/images/save-the-date.png";
 import invitation from "./assets/images/love-letter.gif";
