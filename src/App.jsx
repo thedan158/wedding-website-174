@@ -1,20 +1,19 @@
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { Bounce } from "react-toastify";
 
-import headerImage from "./assets/images/sakura-header.jpg";
-import hy from "./assets/images/double-happiness (1).png";
-import banner from "./assets/images/card1.png";
+import headerImage from "./assets/images/bg1.jpg";
+import banner from "./assets/images/card3.png";
 
 import std from "./assets/images/save-the-date.png";
-import invitation from "./assets/images/love-letter.gif";
-import album from "./assets/images/family-album.gif";
-import gift from "./assets/images/gift.gif";
+import invitation from "./assets/images/msg-removebg-preview.png";
+import album from "./assets/images/camera.png";
+import gift from "./assets/images/money-removebg-preview.png";
 import qr1 from "./assets/images/qr1.jpg";
 import qr2 from "./assets/images/qr.jpg";
 import backgroundMusic from "./assets/musics/music1.mp3";
-import date from "./assets/images/poster.png";
-import bride from "./assets/images/bride.png";
-import groom from "./assets/images/groom.png";
+import date from "./assets/images/date.png";
+import bride from "./assets/images/bride-japan-removebg-preview.png";
+import groom from "./assets/images/broom-japan-removebg-preview.png";
 import { firestore } from "../firebase";
 import Slider from "react-slick";
 import anh1 from "./assets/images/wedding1.jpg";
@@ -185,7 +184,7 @@ const ChatDiv = () => {
   return (
     <div id="loichuc" className="chat-container">
       <img src={invitation} width={100} height={100} />
-      <h2 style={{ fontFamily: "HelloHoney", fontSize: 50 }}>Sổ Lưu Bút</h2>
+      <h2 style={{ fontFamily: "Hirosaki", fontSize: 50 }}>Sổ Lưu Bút</h2>
       <div className="card-wrapper">
         <div className="card">
           <div>
@@ -229,7 +228,7 @@ const ChatDiv = () => {
             <div
               key={index}
               style={{
-                backgroundColor: index % 2 === 0 ? "#DBE9B7" : "transparent",
+                backgroundColor: index % 2 === 0 ? "#bfd4b6" : "transparent",
                 padding: 10,
               }}
             >
@@ -246,7 +245,7 @@ const BankDiv = () => {
   return (
     <div id="mungcuoi" className="chat-container">
       <img src={gift} width={100} height={100} />
-      <h2 style={{ fontFamily: "HelloHoney", fontSize: 50 }}>Gửi Quà Cưới</h2>
+      <h2 style={{ fontFamily: "Hirosaki", fontSize: 50 }}>Gửi Quà Cưới</h2>
       <div className="card-wrapper">
         <div className="card">
           <img src={qr1} width={250} height={250} />
@@ -397,10 +396,8 @@ function App() {
   }
   return (
     <AppContext.Provider value={{ handleSuccess }}>
-      <div className="header" style={{ paddingTop: isMobile ? "0" : "30px" }}>
-        {isMobile ? (
-          <img src={headerImage} alt="Your Image" className="header-image" />
-        ) : null}
+      <div className="header">
+        <img src={headerImage} alt="Your Image" className="header-image" />
 
         <nav>
           <input type="checkbox" id="check" />
@@ -433,15 +430,25 @@ function App() {
       </div>
       <div className="home">
         {isMobile ? (
-          <>
-            <img src={banner} alt="Your Image" className="header-image" />
-            <CountdownClock />
-          </>
-        ) : (
           <div className="container-out">
             <div className="container-in">
+              <img src={banner} alt="Your Image" className="header-image" />
+            </div>
+          </div>
+        ) : (
+          <div className="container-out" style={{ padding: 30 }}>
+            <div
+              className="image-container"
+              style={{
+                height: "110vh",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
               <img src={banner} alt="Your Image" className="header-image1" />
             </div>
+
             <div className="home-img" id="home-img-lg"></div>
           </div>
         )}
@@ -488,7 +495,7 @@ function App() {
                 <div className="timeline-img1"></div>
                 <div className="timings">
                   <div className="image-container">
-                    <img src={bride} width={100} height={100} />
+                    <img src={bride} width={100} />
                   </div>
                   <h2>Hồ Thị Nhật Huyền</h2>
                   <div className="text">11/12/1995</div>
@@ -499,7 +506,7 @@ function App() {
 
               <div className="timeline-container">
                 <div className="timings">
-                  <img src={groom} width={100} height={100} />
+                  <img src={groom} width={100} />
                   <h2>Thiều Đăng Dũng</h2>
                   <div className="text">30/04/1994</div>
                   <h2>Nghề nghiệp</h2>
@@ -585,7 +592,7 @@ function App() {
             }}
           >
             <img src={album} width={100} height={100} />
-            <h2 style={{ fontFamily: "HelloHoney", fontSize: 50 }}>
+            <h2 style={{ fontFamily: "Hirosaki", fontSize: 50 }}>
               Album Ảnh Cưới
             </h2>
           </div>

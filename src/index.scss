@@ -19,6 +19,24 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Hirosaki";
+  src: url("assets/fonts/1FTV-Hirosaki.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Shikamaru";
+  src: url("assets/fonts/SVN-Shikamaru.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bladerunner";
+  src: url("assets/fonts/TLM-KZ-BLADERUNNER.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* <===================CSS VARIABLES===================> */
 
@@ -123,13 +141,16 @@
 
 /* <===================UNIVERSAL CSS===================> */
 body {
-  background-size: cover; /* Cover the entire background */
-  background-position: center; /* Center the background image */
-  background-image: url("assets/images/sakura.png");
+  background-size: contain; /* Maintain width, stretch height */
+  background-repeat: repeat-y; /* Repeat vertically */
+  width: 100vw; /* Full viewport width */
+  min-height: 100vh; /* Minimum viewport height */
+  background-image: url("assets/images/bg-official.jpg");
 }
+
 /* Style buttons */
 .btn {
-  background-color: #dbe9b7; /* Blue background */
+  background-color: #bfd4b6; /* Blue background */
   border: none; /* Remove borders */
   color: white; /* White text */
   padding: 12px 16px; /* Some padding */
@@ -140,7 +161,7 @@ body {
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: #dbe9b7;
+  background-color: #bfd4b6;
 }
 .date-image {
   width: 100%;
@@ -148,7 +169,7 @@ body {
 .countdown-text {
   margin: 20px;
   font-family: "HelloHoney";
-  color: #dbe9b7;
+  color: #bfd4b6;
   font-size: 40px;
 }
 * {
@@ -209,14 +230,14 @@ html {
 h1 {
   font-size: var(--h1-size);
   line-height: var(--h1-size);
-  font-family: "FS CORE MAGIC ROUG", sans-serif;
+  font-family: "Shikamaru", sans-serif;
   color: #203239;
   text-align: center;
 }
 h2 {
   font-size: var(--h2-size);
   font-weight: bold;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Shikamaru", sans-serif;
 }
 h3 {
   font-size: var(--h3-size);
@@ -460,17 +481,17 @@ nav ul {
 nav ul li {
   display: inline-block;
   line-height: 80px;
-  margin: 0 15px;
+  margin: 0 25px;
 }
 nav ul li a {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Hirosaki", sans-serif;
   font-size: 30px;
   border-radius: 3px;
   text-transform: uppercase;
   text-decoration: none;
 }
 a:hover {
-  color: #dbe9b7;
+  color: #bfd4b6;
   transition: 0.5s;
 }
 .checkbtn {
@@ -486,7 +507,7 @@ a:hover {
 }
 @media (max-width: 1000px) {
   nav ul li a {
-    font-size: 12px;
+    font-size: 13px;
   }
   nav ul li {
     margin: 0 10px;
@@ -499,7 +520,9 @@ a:hover {
   nav li ul a {
     font-size: 30px;
   }
-
+  nav {
+    margin-bottom: 5vh;
+  }
   h1 {
     font-size: 40px;
   }
@@ -717,7 +740,7 @@ a:hover {
 .card {
   width: calc(50% - 20px); /* Adjust margin and padding */
   min-height: 200px;
-  border: 5px solid #dbe9b7;
+  border: 5px solid #bfd4b6;
   border-radius: 10px;
   background-color: white;
   margin: 10px;
@@ -759,8 +782,8 @@ a:hover {
   background-color: inherit;
   border-radius: 100px;
   font-weight: 600;
-  color: #dbe9b7;
-  box-shadow: 0 0 0 2px #dbe9b7;
+  color: #bfd4b6;
+  box-shadow: 0 0 0 2px #bfd4b6;
   cursor: pointer;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
@@ -769,7 +792,7 @@ a:hover {
 .animated-button svg {
   position: absolute;
   width: 24px;
-  fill: #dbe9b7;
+  fill: #bfd4b6;
   z-index: 9;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -789,7 +812,7 @@ a:hover {
   transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
-  background-color: #dbe9b7;
+  background-color: #bfd4b6;
   border-radius: 50%;
   opacity: 0;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -841,7 +864,7 @@ a:hover {
   margin: 0 auto;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
-  background-color: #dbe9b7;
+  background-color: #bfd4b6;
   border: none;
   width: 90%;
   display: block;
@@ -1085,7 +1108,7 @@ footer {
   margin-top: 20vh;
   height: fit-content;
   width: 100%;
-  background-color: #dbe9b7;
+  background-color: #bfd4b6;
   padding: 10vh 30px;
 }
 footer h2 {
