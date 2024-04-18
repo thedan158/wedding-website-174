@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { Bounce } from "react-toastify";
 
 import headerImage from "./assets/images/bg1.jpg";
-import banner from "./assets/images/card3.png";
+import banner from "./assets/images/card4.png";
 
 import std from "./assets/images/save-the-date.png";
 import invitation from "./assets/images/msg-removebg-preview.png";
