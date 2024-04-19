@@ -864,7 +864,7 @@ function App() {
                   Rước dâu xuất phát tại nhà trai lúc 9:00 <br />
                 </div>
                 <div className="text">
-                  Hôn lễ bắt đầu Lúc 10:00 thứ 7 ngày 04/05/2024 (Nhằm ngày
+                  Hôn lễ bắt đầu lúc 10:00 thứ 7 ngày 04/05/2024 (Nhằm ngày
                   26/03 năm Giáp Thìn)
                 </div>
                 <div
