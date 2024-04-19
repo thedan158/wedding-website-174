@@ -4,25 +4,71 @@ import { Bounce } from "react-toastify";
 import headerImage from "./assets/images/bg1.jpg";
 import banner from "./assets/images/card4.png";
 
-import std from "./assets/images/save-the-date.png";
+import std from "./assets/images/save-the-date (1).png";
 import invitation from "./assets/images/msg-removebg-preview.png";
 import album from "./assets/images/camera.png";
 import gift from "./assets/images/money-removebg-preview.png";
-import qr1 from "./assets/images/qr1.jpg";
-import qr2 from "./assets/images/qr.jpg";
-import backgroundMusic from "./assets/musics/music1.mp3";
+import qr1 from "./assets/images/qrDung.jpg";
+import qr2 from "./assets/images/qrHuyen.jpg";
+import backgroundMusic from "./assets/musics/music1 (2).mp3";
 import date from "./assets/images/date.png";
 import bride from "./assets/images/bride-japan-removebg-preview.png";
 import groom from "./assets/images/broom-japan-removebg-preview.png";
 import { firestore } from "../firebase";
 import Slider from "react-slick";
-import anh1 from "./assets/images/wedding1.jpg";
-import anh2 from "./assets/images/wedding3.jpg";
-import anh3 from "./assets/images/wedding4.jpg";
-import anh4 from "./assets/images/wedding5.jpg";
-import anh5 from "./assets/images/wedding6.jpg";
-import anh6 from "./assets/images/wedding7.jpg";
-import anh7 from "./assets/images/bride.jpg";
+import anh1 from "./assets/images/TA_00066_1-min.jpg";
+import anh2 from "./assets/images/TA_00266_1-min.jpg";
+import anh3 from "./assets/images/TA_00758_1-min.jpg";
+import anh4 from "./assets/images/TA_00801_1-min.jpg";
+import anh5 from "./assets/images/TA_00820_1-min.jpg";
+import anh6 from "./assets/images/TA_09686_1-min.jpg";
+import anh7 from "./assets/images/TA_09867_1-min.jpg";
+
+import anh8 from "./assets/images/TA_09984_1-min.jpg";
+
+import anh9 from "./assets/images/TA_00084_1-min.jpg";
+
+import anh10 from "./assets/images/TA_00172_1-min.jpg";
+
+import anh11 from "./assets/images/TA_00238_1-min.jpg";
+
+import anh12 from "./assets/images/TA_00273_1-min.jpg";
+
+import anh13 from "./assets/images/TA_00390_1-min.jpg";
+
+import anh14 from "./assets/images/TA_00420_1-min.jpg";
+import anh15 from "./assets/images/TA_00745_1-min.jpg";
+import anh16 from "./assets/images/MAN09061-min.jpg";
+import anh17 from "./assets/images/MAN09103-min.jpg";
+import anh18 from "./assets/images/MAN09108-min.jpg";
+import anh19 from "./assets/images/MAN09123-min.jpg";
+import anh20 from "./assets/images/MAN09139-min.jpg";
+import anh21 from "./assets/images/MAN09161-min.jpg";
+import anh22 from "./assets/images/MAN09173-min.jpg";
+
+import anh23 from "./assets/images/MAN09195-min.jpg";
+
+import anh24 from "./assets/images/MAN09225-min.jpg";
+
+import anh25 from "./assets/images/MAN09255-min.jpg";
+
+import anh26 from "./assets/images/MAN09287-min.jpg";
+
+import anh27 from "./assets/images/MAN09289-min.jpg";
+
+import anh28 from "./assets/images/MAN09365-min.jpg";
+
+import anh29 from "./assets/images/MAN09383-min.jpg";
+import anh30 from "./assets/images/MAN09388-min.jpg";
+import anh31 from "./assets/images/MAN09081-min.jpg";
+
+import anh32 from "./assets/images/MAN09169-min.jpg";
+
+import anh33 from "./assets/images/MAN09171-min.jpg";
+
+import anh34 from "./assets/images/MAN09229-min.jpg";
+
+import anh35 from "./assets/images/MAN09238-min.jpg";
 
 import CountdownClock from "./Countdown";
 import { toast } from "react-toastify";
@@ -114,6 +160,247 @@ function SimpleSlider() {
         <div>
           <img
             src={anh7}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh8}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh9}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh10}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh11}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh12}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh13}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh14}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh15}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+      </Slider>
+    </div>
+  );
+}
+function SimpleSlider1() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    autoplay: true,
+
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+  return (
+    <div className="slider-container">
+      <Slider {...settings}>
+        <div>
+          <img
+            src={anh16}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh17}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh18}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>{" "}
+        <div>
+          <img
+            src={anh19}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>{" "}
+        <div>
+          <img
+            src={anh20}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>{" "}
+        <div>
+          <img
+            src={anh21}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh22}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh23}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh24}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh25}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh26}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh27}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh28}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh29}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh30}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh31}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh32}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh33}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh34}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh35}
             alt="Example"
             style={{ maxWidth: "100%", height: "auto", padding: 10 }}
           />{" "}
@@ -460,10 +747,10 @@ function App() {
           <div className="timeline-img"></div>
           <div className="timings">
             <img src={std} width={200} height={200} />
-            <h2> Tiệc ăn hỏi</h2>
+            <h2 style={{ color: "#FA7070" }}> Tiệc ăn hỏi</h2>
             <div className="text">
-              thứ 7, ngày 27 tháng 4 năm 2024 <br />
-              Xã Tam Anh Bắc, Núi Thành Quảng Nam
+              10h30, thứ 7, ngày 27 tháng 4 năm 2024 <br />
+              Thôn Trà Lý , Xã Tam Anh Bắc , Núi Thành , Quảng Nam
             </div>
             {/* {isMobile && (
               <div
@@ -478,9 +765,9 @@ function App() {
               </div>
             )} */}
 
-            <h2>Lễ Thành Hôn</h2>
+            <h2 style={{ color: "#FA7070" }}>Lễ Thành Hôn</h2>
             <div className="text">
-              10h30, thứ 7, ngày 4 tháng 5 năm 2024 <br />
+              10h, thứ 7, ngày 4 tháng 5 năm 2024 <br />
               Tư gia nhà trai, Quốc lộ 1A, Cẩm Sơn, Cẩm Xuyên, Hà Tĩnh <br />
             </div>
           </div>
@@ -498,9 +785,8 @@ function App() {
                     <img src={bride} width={100} />
                   </div>
                   <h2>Hồ Thị Nhật Huyền</h2>
-                  <div className="text">11/12/1995</div>
-                  <h2>Nghề nghiệp</h2>
-                  <div className="text">Làm việc tại Nhật Bản</div>
+
+                  <h2>06/02/1996</h2>
                 </div>
               </div>
 
@@ -508,9 +794,8 @@ function App() {
                 <div className="timings">
                   <img src={groom} width={100} />
                   <h2>Thiều Đăng Dũng</h2>
-                  <div className="text">30/04/1994</div>
-                  <h2>Nghề nghiệp</h2>
-                  <div className="text">Làm việc tại Misubishi Nhật Bản</div>
+
+                  <h2>06/02/1996</h2>
                 </div>
                 <div className="timeline-img2"></div>
               </div>
@@ -538,35 +823,59 @@ function App() {
               <div className="stay-item">
                 <h3>
                   01. <br />
-                  RƯỚC DÂU TẠI NHÀ TRAI LÚC 9H
+                  LỄ ĂN HỎI TẠI NHÀ GÁI
                 </h3>
                 <div className="text">
-                  ĐI THEO HƯỚNG DẪN <br /> Ở MAP BÊN DƯỚI ĐỂ TỚI NHÀ TRAI
+                  Vào lúc 08:00 Thứ 7 ngày 27/04/2024 (Nhằm ngày 19/03 năm Giáp
+                  Thìn)
                 </div>
                 <div
                   onClick={() =>
                     window.open(
-                      "https://www.google.com/maps/place/Kh%C3%A1ch+s%E1%BA%A1n+Ngo%E1%BA%A1i+Th%C6%B0%C6%A1ng/@18.0772729,106.2868121,17z/data=!3m1!4b1!4m9!3m8!1s0x313889b7a46e7d63:0xff459b9b877b614f!5m2!4m1!1i2!8m2!3d18.0772678!4d106.289387!16s%2Fg%2F1tgm0bbj?hl=vi-VN&entry=ttu"
+                      "https://www.google.com/maps/place/Tam+Anh+B%E1%BA%AFc,+Tp.+Tam+K%E1%BB%B3,+Qu%E1%BA%A3ng+Nam,+Vi%E1%BB%87t+Nam/@15.5065441,108.5412524,14z/data=!3m1!4b1!4m6!3m5!1s0x3169c4e4e54e04d1:0xf71879cfbe73a92e!8m2!3d15.510874!4d108.5522531!16s%2Fg%2F1th60wc0?hl=vi-VN&entry=tts"
                     )
                   }
                   className="text links"
                 >
-                  GOOGLE MAPS
+                  ĐỊA CHỈ NHÀ GÁI
+                </div>
+                <h3>ĐỊA ĐIỂM ĐÃI TIỆC LỄ ĂN HỎI</h3>
+                <div className="text">
+                  Vào lúc 10:00 tại sân vận động xã Tam Anh Bắc <br />
+                  Tam Anh Bắc , Núi Thành , Quảng Nam
+                </div>
+                <div
+                  onClick={() =>
+                    window.open(
+                      "https://www.google.com/maps/place/Tam+Anh+B%E1%BA%AFc,+Tp.+Tam+K%E1%BB%B3,+Qu%E1%BA%A3ng+Nam,+Vi%E1%BB%87t+Nam/@15.5065441,108.5412524,14z/data=!3m1!4b1!4m6!3m5!1s0x3169c4e4e54e04d1:0xf71879cfbe73a92e!8m2!3d15.510874!4d108.5522531!16s%2Fg%2F1th60wc0?hl=vi-VN&entry=tts"
+                    )
+                  }
+                  className="text links"
+                >
+                  ĐỊA CHỈ ĐÃI TIỆC
                 </div>
               </div>
               <div className="stay-item">
                 <h3>
                   02. <br />
-                  KHI BẠN ĐÃ ĐẾN
+                  HÔN LỄ TẠI NHÀ TRAI
                 </h3>
                 <div className="text">
-                  ĐI VÀO CỔNG <br />
+                  Rước dâu xuất phát tại nhà trai lúc 9:00 <br />
+                </div>
+                <div className="text">
+                  Hôn lễ bắt đầu Lúc 10:00 thứ 7 ngày 04/05/2024 (Nhằm ngày
+                  26/03 năm Giáp Thìn)
                 </div>
                 <div
-                  onClick={() => (window.location.href = "tel:+84999999999")}
+                  onClick={() =>
+                    window.open(
+                      "https://www.google.com/maps/search/18.223144,+106.066908?entry=tts"
+                    )
+                  }
                   className="text links"
                 >
-                  HOẶC GỌI CHO BỌN MÌNH
+                  ĐỊA CHỈ NHÀ TRAI
                 </div>
               </div>
             </div>
@@ -598,6 +907,22 @@ function App() {
           </div>
 
           <SimpleSlider />
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+            }}
+          >
+            <img src={album} width={100} height={100} />
+            <h2 style={{ fontFamily: "Hirosaki", fontSize: 50 }}>
+              Album Ảnh Cưới Nhật Bản
+            </h2>
+          </div>
+
+          <SimpleSlider1 />
           <div className="parting-message reveal">
             <h1>Hope to See You!</h1>
           </div>
@@ -633,9 +958,6 @@ function App() {
           </>
           <CountdownClock />
           <footer>
-            <h2>Hãy gọi cho chúng mình</h2>
-            <h2>Thiều Đăng Dũng: 099999999</h2>
-            <h2>Hồ Thị Nhật Huyền: 088888888</h2>
             <div className="text">
               © 2024 for Dũng and Huyền. Made by{" "}
               <a
