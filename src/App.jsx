@@ -878,7 +878,7 @@ function App() {
                 </div>
                 <h3>ĐỊA ĐIỂM ĐÃI TIỆC LỄ ĂN HỎI</h3>
                 <div className="text">
-                  Vào lúc 10:00 tại sân vận động xã Tam Anh Bắc <br />
+                  Vào lúc 10:30 tại sân vận động xã Tam Anh Bắc <br />
                   Tam Anh Bắc , Núi Thành , Quảng Nam
                 </div>
                 <div
