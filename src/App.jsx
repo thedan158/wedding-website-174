@@ -73,6 +73,7 @@ import anh35 from "./assets/images/MAN09238-min.jpg";
 import CountdownClock from "./Countdown";
 import { toast } from "react-toastify";
 import { useMediaQuery } from "react-responsive";
+import { Box, LinearProgress, Typography } from "@mui/material";
 
 function SimpleSlider() {
   var settings = {
@@ -590,12 +591,14 @@ function App() {
   const toastId = useRef(null);
 
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+  const [progress, setProgress] = useState(0);
 
   const toastPosition = isMobile ? "top-center" : "top-right";
   const [audioError, setAudioError] = useState(false);
   const [audioPlayed, setAudioPlayed] = useState(false);
   const [audioEnabled, setAudioEnabled] = useState(true); // Track whether the audio is enabled or disabled
   const [imagesLoaded, setImagesLoaded] = useState(false);
+
   useEffect(() => {
     const imagePaths = [
       anh1,
@@ -634,25 +637,31 @@ function App() {
       anh34,
       anh35,
     ];
+    let loadedImagesCount = 0;
 
     const loadImage = (path) => {
       return new Promise((resolve, reject) => {
         const img = new Image();
         img.src = path;
-        img.onload = () => resolve();
+        img.onload = () => {
+          loadedImagesCount++;
+          const newProgress = (loadedImagesCount / imagePaths.length) * 100;
+          console.log(newProgress);
+          setProgress(newProgress);
+          if (loadedImagesCount === imagePaths.length) {
+            setImagesLoaded(true);
+          }
+          resolve();
+        };
         img.onerror = (error) => reject(error);
       });
     };
 
     const imageLoadPromises = imagePaths.map(loadImage);
 
-    Promise.all(imageLoadPromises)
-      .then(() => {
-        setImagesLoaded(true);
-      })
-      .catch((error) => {
-        console.error("Error loading images:", error);
-      });
+    Promise.all(imageLoadPromises).catch((error) => {
+      console.error("Error loading images:", error);
+    });
   }, []);
   const audioRef = useRef(null);
 
@@ -736,10 +745,12 @@ function App() {
     return () => window.removeEventListener("scroll", reveal);
   }, []);
 
-  function myFunction() {
-    // document.getElementById("check").checked = false;
-  }
-  if (!imagesLoaded) return <div>Loading...</div>;
+  if (!imagesLoaded)
+    return (
+      <Box sx={{ width: "100%" }}>
+        <LinearProgress variant="determinate" value={progress} />
+      </Box>
+    );
   return (
     <AppContext.Provider value={{ handleSuccess }}>
       <div className="header">
@@ -752,24 +763,16 @@ function App() {
           </label>
           <ul className="text">
             <li>
-              <a href="#story" onClick={myFunction()}>
-                CẶP ĐÔI
-              </a>
+              <a href="#story">CẶP ĐÔI</a>
             </li>
             <li>
-              <a href="#stay" onClick={myFunction()}>
-                SỰ KIỆN
-              </a>
+              <a href="#stay">SỰ KIỆN</a>
             </li>
             <li>
-              <a href="#loichuc" onClick={myFunction()}>
-                LỜI CHÚC
-              </a>
+              <a href="#loichuc">LỜI CHÚC</a>
             </li>
             <li>
-              <a href="#mungcuoi" onClick={myFunction()}>
-                MỪNG CƯỚI
-              </a>
+              <a href="#mungcuoi">MỪNG CƯỚI</a>
             </li>
           </ul>
         </nav>
