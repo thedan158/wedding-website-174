@@ -536,10 +536,10 @@ const BankDiv = () => {
       <h2 style={{ fontFamily: "Hirosaki", fontSize: 50 }}>Gửi Quà Cưới</h2>
       <div className="card-wrapper">
         <div className="card">
-          <img src={qr1} width={250} height={250} />
+          <img src={qr1} width={200} height={200} />
         </div>
         <div className="card">
-          <img src={qr2} width={250} height={250} />
+          <img src={qr2} width={200} height={200} />
         </div>
       </div>
     </div>

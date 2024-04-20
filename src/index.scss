@@ -181,7 +181,7 @@ body {
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Cambria", sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #141e27;
   font-weight: 700;
 }
@@ -247,7 +247,7 @@ h2 {
 }
 h3 {
   font-size: var(--h3-size);
-  font-family: "Cambria", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .timeline1 {
   padding: 20;
@@ -423,7 +423,7 @@ h3 {
 }
 
 .text {
-  font-family: "Cambria", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: var(--text-size);
   line-height: 1.3rem;
   word-spacing: 5px; /* Adjust the value as needed */
@@ -1025,6 +1025,7 @@ form button {
     width: 100%;
   }
   .hands {
+    display: none;
     width: 100%;
     background-image: url("assets/images/MAN09061-min.jpg");
     background-size: cover;
