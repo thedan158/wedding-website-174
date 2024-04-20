@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { Bounce } from "react-toastify";
 
 import headerImage from "./assets/images/bg1.jpg";
-import banner from "./assets/images/card4.png";
+import banner from "./assets/images/bannerfinal.png";
 
 import std from "./assets/images/save-the-date (1).png";
 import invitation from "./assets/images/msg-removebg-preview.png";
@@ -595,7 +595,65 @@ function App() {
   const [audioError, setAudioError] = useState(false);
   const [audioPlayed, setAudioPlayed] = useState(false);
   const [audioEnabled, setAudioEnabled] = useState(true); // Track whether the audio is enabled or disabled
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  useEffect(() => {
+    const imagePaths = [
+      anh1,
+      anh2,
+      anh3,
+      anh4,
+      anh5,
+      anh6,
+      anh7,
+      anh8,
+      anh9,
+      anh10,
+      anh11,
+      anh12,
+      anh13,
+      anh14,
+      anh15,
+      anh16,
+      anh17,
+      anh18,
+      anh19,
+      anh20,
+      anh21,
+      anh22,
+      anh23,
+      anh24,
+      anh25,
+      anh26,
+      anh27,
+      anh28,
+      anh29,
+      anh30,
+      anh31,
+      anh32,
+      anh33,
+      anh34,
+      anh35,
+    ];
 
+    const loadImage = (path) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = path;
+        img.onload = () => resolve();
+        img.onerror = (error) => reject(error);
+      });
+    };
+
+    const imageLoadPromises = imagePaths.map(loadImage);
+
+    Promise.all(imageLoadPromises)
+      .then(() => {
+        setImagesLoaded(true);
+      })
+      .catch((error) => {
+        console.error("Error loading images:", error);
+      });
+  }, []);
   const audioRef = useRef(null);
 
   const handleAudioError = () => {
@@ -681,6 +739,7 @@ function App() {
   function myFunction() {
     // document.getElementById("check").checked = false;
   }
+  if (!imagesLoaded) return <div>Loading...</div>;
   return (
     <AppContext.Provider value={{ handleSuccess }}>
       <div className="header">
@@ -786,7 +845,7 @@ function App() {
                   </div>
                   <h2>Hồ Thị Nhật Huyền</h2>
 
-                  <h2>06/02/1996</h2>
+                  <h2>12/10/1998</h2>
                 </div>
               </div>
 
@@ -832,7 +891,7 @@ function App() {
                 <div
                   onClick={() =>
                     window.open(
-                      "https://www.google.com/maps/place/Tam+Anh+B%E1%BA%AFc,+Tp.+Tam+K%E1%BB%B3,+Qu%E1%BA%A3ng+Nam,+Vi%E1%BB%87t+Nam/@15.5065441,108.5412524,14z/data=!3m1!4b1!4m6!3m5!1s0x3169c4e4e54e04d1:0xf71879cfbe73a92e!8m2!3d15.510874!4d108.5522531!16s%2Fg%2F1th60wc0?hl=vi-VN&entry=tts"
+                      "https://www.google.com/maps?q=%C4%90%E1%BB%8Bnh+C%C6%A1+V%C4%83n+%C6%AFa,+Tam+Anh+B%E1%BA%AFc,+N%C3%BAi+Th%C3%A0nh,+Qu%E1%BA%A3ng+Nam,+%E3%83%99%E3%83%88%E3%83%8A%E3%83%A0&ftid=0x3169c4dd9f2b0687:0xced0efd4d112164e&hl=ja-JP&gl=jp&entry=gps&lucs=s2se,,94215790&g_ep=CAISBjUuODguMhgAQgJKUA%3D%3D&shorturl=1"
                     )
                   }
                   className="text links"
@@ -847,7 +906,7 @@ function App() {
                 <div
                   onClick={() =>
                     window.open(
-                      "https://www.google.com/maps/place/Tam+Anh+B%E1%BA%AFc,+Tp.+Tam+K%E1%BB%B3,+Qu%E1%BA%A3ng+Nam,+Vi%E1%BB%87t+Nam/@15.5065441,108.5412524,14z/data=!3m1!4b1!4m6!3m5!1s0x3169c4e4e54e04d1:0xf71879cfbe73a92e!8m2!3d15.510874!4d108.5522531!16s%2Fg%2F1th60wc0?hl=vi-VN&entry=tts"
+                      "https://www.google.com/maps?q=15.5183463,108.5599010&entry=gps&lucs=,94216401,47071704,47069508,47084304,94208458,94208447&g_ep=CAISDTYuMTAyLjMuNDI5MjAYACDXggMqNiw5NDIxNjQwMSw0NzA3MTcwNCw0NzA2OTUwOCw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICVk4%3D&g_st=ifm"
                     )
                   }
                   className="text links"
@@ -870,7 +929,7 @@ function App() {
                 <div
                   onClick={() =>
                     window.open(
-                      "https://www.google.com/maps/search/18.223144,+106.066908?entry=tts"
+                      "https://www.google.com/maps?q=18.2197420,106.0797730&entry=gps&lucs=,94216395,47071704,47069508,94218635,47084304,94208458,94208447&g_ep=CAISDTYuMTExLjIuNTQ1MjAYACDXggMqPyw5NDIxNjM5NSw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODYzNSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICVk4%3D&g_st=ifm"
                     )
                   }
                   className="text links"
