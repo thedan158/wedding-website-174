@@ -874,7 +874,7 @@ function App() {
                   }
                   className="text links"
                 >
-                  ĐỊA CHỈ NHÀ GÁI
+                  GOOGLE MAPS
                 </div>
                 <h3>ĐỊA ĐIỂM ĐÃI TIỆC LỄ ĂN HỎI</h3>
                 <div className="text">
@@ -889,7 +889,7 @@ function App() {
                   }
                   className="text links"
                 >
-                  ĐỊA CHỈ ĐÃI TIỆC
+                  GOOGLE MAPS
                 </div>
               </div>
               <div className="stay-item">
@@ -912,7 +912,7 @@ function App() {
                   }
                   className="text links"
                 >
-                  ĐỊA CHỈ NHÀ TRAI
+                  GOOGLE MAPS
                 </div>
               </div>
             </div>
