@@ -16,59 +16,34 @@ import bride from "./assets/images/bride-japan-removebg-preview.png";
 import groom from "./assets/images/broom-japan-removebg-preview.png";
 import { firestore } from "../firebase";
 import Slider from "react-slick";
-import anh1 from "./assets/images/TA_00066_1-min.jpg";
-import anh2 from "./assets/images/TA_00266_1-min.jpg";
-import anh3 from "./assets/images/TA_00758_1-min.jpg";
-import anh4 from "./assets/images/TA_00801_1-min.jpg";
-import anh5 from "./assets/images/TA_00820_1-min.jpg";
-import anh6 from "./assets/images/TA_09686_1-min.jpg";
-import anh7 from "./assets/images/TA_09867_1-min.jpg";
+import anh1 from "./assets/images/anh1.jpg";
+import anh2 from "./assets/images/anh2.jpg";
+import anh3 from "./assets/images/anh3.jpg";
+import anh4 from "./assets/images/anh4.jpg";
+import anh5 from "./assets/images/anh5.jpg";
+import anh6 from "./assets/images/anh6.jpg";
+import anh7 from "./assets/images/anh7.jpg";
 
-import anh8 from "./assets/images/TA_09984_1-min.jpg";
+import anh8 from "./assets/images/anh8.jpg";
 
-import anh9 from "./assets/images/TA_00084_1-min.jpg";
+import anh9 from "./assets/images/anh9.jpg";
 
-import anh10 from "./assets/images/TA_00172_1-min.jpg";
+import anh10 from "./assets/images/anh10.jpg";
 
-import anh11 from "./assets/images/TA_00238_1-min.jpg";
+import anh11 from "./assets/images/anh11.jpg";
 
-import anh12 from "./assets/images/TA_00273_1-min.jpg";
+import anh12 from "./assets/images/anh12.jpg";
 
-import anh13 from "./assets/images/TA_00390_1-min.jpg";
+import anh13 from "./assets/images/anh13.jpg";
 
-import anh14 from "./assets/images/TA_00420_1-min.jpg";
-import anh15 from "./assets/images/TA_00745_1-min.jpg";
-import anh16 from "./assets/images/MAN09061-min.jpg";
-import anh17 from "./assets/images/MAN09103-min.jpg";
-import anh18 from "./assets/images/MAN09108-min.jpg";
-import anh19 from "./assets/images/MAN09123-min.jpg";
-import anh20 from "./assets/images/MAN09139-min.jpg";
-import anh21 from "./assets/images/MAN09161-min.jpg";
-import anh22 from "./assets/images/MAN09173-min.jpg";
-
-import anh23 from "./assets/images/MAN09195-min.jpg";
-
-import anh24 from "./assets/images/MAN09225-min.jpg";
-
-import anh25 from "./assets/images/MAN09255-min.jpg";
-
-import anh26 from "./assets/images/MAN09287-min.jpg";
-
-import anh27 from "./assets/images/MAN09289-min.jpg";
-
-import anh28 from "./assets/images/MAN09365-min.jpg";
-
-import anh29 from "./assets/images/MAN09383-min.jpg";
-import anh30 from "./assets/images/MAN09388-min.jpg";
-import anh31 from "./assets/images/MAN09081-min.jpg";
-
-import anh32 from "./assets/images/MAN09169-min.jpg";
-
-import anh33 from "./assets/images/MAN09171-min.jpg";
-
-import anh34 from "./assets/images/MAN09229-min.jpg";
-
-import anh35 from "./assets/images/MAN09238-min.jpg";
+import anh14 from "./assets/images/anh14.jpg";
+import anh15 from "./assets/images/anh15.jpg";
+import anh16 from "./assets/images/anh16.jpg";
+import anh17 from "./assets/images/anh17.jpg";
+import anh18 from "./assets/images/anh18.jpg";
+import anh19 from "./assets/images/anh19.jpg";
+import anh20 from "./assets/images/anh20.jpg";
+import anh21 from "./assets/images/anh21.jpg";
 
 import CountdownClock from "./Countdown";
 import { toast } from "react-toastify";
@@ -193,34 +168,6 @@ function SimpleSlider() {
             style={{ maxWidth: "100%", height: "auto", padding: 10 }}
           />{" "}
         </div>
-        <div>
-          <img
-            src={anh12}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh13}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh14}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh15}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
       </Slider>
     </div>
   );
@@ -268,6 +215,34 @@ function SimpleSlider1() {
       <Slider {...settings}>
         <div>
           <img
+            src={anh12}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh13}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh14}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
+            src={anh15}
+            alt="Example"
+            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
+          />{" "}
+        </div>
+        <div>
+          <img
             src={anh16}
             alt="Example"
             style={{ maxWidth: "100%", height: "auto", padding: 10 }}
@@ -304,104 +279,6 @@ function SimpleSlider1() {
         <div>
           <img
             src={anh21}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh22}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh23}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh24}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh25}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh26}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh27}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh28}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh29}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh30}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh31}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh32}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh33}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh34}
-            alt="Example"
-            style={{ maxWidth: "100%", height: "auto", padding: 10 }}
-          />{" "}
-        </div>
-        <div>
-          <img
-            src={anh35}
             alt="Example"
             style={{ maxWidth: "100%", height: "auto", padding: 10 }}
           />{" "}
@@ -629,6 +506,14 @@ function App() {
         anh11,
         anh12,
         anh13,
+        anh14,
+        anh15,
+        anh16,
+        anh17,
+        anh18,
+        anh19,
+        anh20,
+        anh21,
       ];
     }
 
@@ -641,7 +526,6 @@ function App() {
         img.onload = () => {
           loadedImagesCount++;
           const newProgress = (loadedImagesCount / imagePaths.length) * 100;
-          console.log(newProgress);
           setProgress(newProgress);
           if (loadedImagesCount === imagePaths.length) {
             setImagesLoaded(true);
@@ -684,7 +568,6 @@ function App() {
         padding: 10,
       },
     });
-    console.log("sent");
   };
   const toggleAudio = () => {
     if (audioEnabled) {
@@ -717,7 +600,7 @@ function App() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [imagesLoaded]);
 
   useEffect(() => {
     const reveal = () => {
@@ -738,7 +621,7 @@ function App() {
 
     window.addEventListener("scroll", reveal);
     return () => window.removeEventListener("scroll", reveal);
-  }, []);
+  }, [imagesLoaded]);
 
   if (!imagesLoaded)
     return (
