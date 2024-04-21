@@ -863,7 +863,8 @@ function App() {
                   HÔN LỄ TẠI NHÀ GÁI
                 </h3>
                 <div className="text">
-                  Vào lúc 10:30 tại sân vận động xã Tam Anh Bắc <br />
+                  Vào lúc 10:30 ngày 26/4/2024 (Nhằm ngày 19/3 năm Giáp Thìn){" "}
+                  <br /> tại sân vận động xã Tam Anh Bắc <br />
                   Tam Anh Bắc , Núi Thành , Quảng Nam
                 </div>
                 <div
