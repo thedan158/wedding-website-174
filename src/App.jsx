@@ -600,18 +600,38 @@ function App() {
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
-    const imagePaths = [
-      anh1,
-      anh2,
-      anh3,
-      anh4,
-      anh5,
-      anh6,
-      anh7,
-      anh8,
-      anh9,
-      anh10,
-    ];
+    let imagePaths = [];
+    if (isMobile) {
+      imagePaths = [
+        anh1,
+        anh2,
+        anh3,
+        anh4,
+        anh5,
+        anh6,
+        anh7,
+        anh8,
+        anh9,
+        anh10,
+      ];
+    } else {
+      imagePaths = [
+        anh1,
+        anh2,
+        anh3,
+        anh4,
+        anh5,
+        anh6,
+        anh7,
+        anh8,
+        anh9,
+        anh10,
+        anh11,
+        anh12,
+        anh13,
+      ];
+    }
+
     let loadedImagesCount = 0;
 
     const loadImage = (path) => {
@@ -761,24 +781,25 @@ function App() {
           </div>
         ) : (
           <div className="container-out" style={{ padding: 30 }}>
-            <div
-              className="image-container"
-              style={{
-                height: "110vh",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <img src={banner} alt="Your Image" className="header-image1" />
+            <div className="container-in">
+              <div
+                className="image-container"
+                style={{
+                  height: "110vh",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <img src={banner} alt="Your Image" className="header-image1" />
+              </div>
             </div>
-
             <div className="home-img" id="home-img-lg"></div>
           </div>
         )}
       </div>
 
-      {!isMobile && <div className="home-img home-img-sm"></div>}
+      {!isMobile ? <div className="home-img home-img-sm"></div> : null}
       <div className="timeline reveal">
         <div className="timeline-container">
           <div className="timeline-img"></div>
@@ -881,6 +902,26 @@ function App() {
               <div className="stay-item">
                 <h3>
                   02. <br />
+                  TIỆC TRÀ TẠI NHÀ TRAI
+                </h3>
+
+                <div className="text">
+                  19:00 thứ 6 ngày 03/05/2024 (Nhằm ngày 25/03 năm Giáp Thìn)
+                </div>
+                <div
+                  onClick={() =>
+                    window.open(
+                      "https://www.google.com/maps?q=18.2197420,106.0797730&entry=gps&lucs=,94216395,47071704,47069508,94218635,47084304,94208458,94208447&g_ep=CAISDTYuMTExLjIuNTQ1MjAYACDXggMqPyw5NDIxNjM5NSw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODYzNSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICVk4%3D&g_st=ifm"
+                    )
+                  }
+                  className="text links"
+                >
+                  GOOGLE MAPS
+                </div>
+              </div>
+              <div className="stay-item">
+                <h3>
+                  03. <br />
                   HÔN LỄ TẠI NHÀ TRAI
                 </h3>
                 <div className="text">
