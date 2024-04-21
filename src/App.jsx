@@ -73,7 +73,7 @@ import anh35 from "./assets/images/MAN09238-min.jpg";
 import CountdownClock from "./Countdown";
 import { toast } from "react-toastify";
 import { useMediaQuery } from "react-responsive";
-import { Box, LinearProgress, Typography } from "@mui/material";
+import { Box, LinearProgress } from "@mui/material";
 
 function SimpleSlider() {
   var settings = {
@@ -860,23 +860,8 @@ function App() {
               <div className="stay-item">
                 <h3>
                   01. <br />
-                  LỄ ĂN HỎI TẠI NHÀ GÁI
+                  HÔN LỄ TẠI NHÀ GÁI
                 </h3>
-                <div className="text">
-                  Vào lúc 08:00 Thứ 7 ngày 27/04/2024 (Nhằm ngày 19/03 năm Giáp
-                  Thìn)
-                </div>
-                <div
-                  onClick={() =>
-                    window.open(
-                      "https://www.google.com/maps?q=%C4%90%E1%BB%8Bnh+C%C6%A1+V%C4%83n+%C6%AFa,+Tam+Anh+B%E1%BA%AFc,+N%C3%BAi+Th%C3%A0nh,+Qu%E1%BA%A3ng+Nam,+%E3%83%99%E3%83%88%E3%83%8A%E3%83%A0&ftid=0x3169c4dd9f2b0687:0xced0efd4d112164e&hl=ja-JP&gl=jp&entry=gps&lucs=s2se,,94215790&g_ep=CAISBjUuODguMhgAQgJKUA%3D%3D&shorturl=1"
-                    )
-                  }
-                  className="text links"
-                >
-                  GOOGLE MAPS
-                </div>
-                <h3>ĐỊA ĐIỂM ĐÃI TIỆC LỄ ĂN HỎI</h3>
                 <div className="text">
                   Vào lúc 10:30 tại sân vận động xã Tam Anh Bắc <br />
                   Tam Anh Bắc , Núi Thành , Quảng Nam
